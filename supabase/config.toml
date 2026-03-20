@@ -1,0 +1,49 @@
+project_id = "qyhcnxdsdpgzxhszupui"
+
+[functions.scrape-jobs]
+verify_jwt = false
+
+[functions.generate-email]
+verify_jwt = false
+
+[functions.send-application]
+verify_jwt = false
+
+[functions.automate-applications]
+verify_jwt = false
+
+[functions.daily-job-scrape]
+verify_jwt = false
+
+[functions.estimate-salary]
+verify_jwt = false
+
+[functions.generate-negotiation]
+verify_jwt = false
+
+[functions.calculate-job-match]
+verify_jwt = false
+
+[functions.analyze-resume]
+verify_jwt = false
+
+[functions.generate-networking-message]
+verify_jwt = false
+
+[functions.analyze-skills]
+verify_jwt = false
+
+[functions.predict-career]
+verify_jwt = false
+
+[functions.send-interview-reminder]
+verify_jwt = false
+
+[functions.mock-interview]
+verify_jwt = false
+
+[functions.seed-india-jobs]
+verify_jwt = false
+
+[functions.career-chat]
+verify_jwt = false

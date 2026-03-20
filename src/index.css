@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 100% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 210 85% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 175 75% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 20% 50%;
+
+    --accent: 175 75% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 210 30% 88%;
+    --input: 210 30% 88%;
+    --ring: 210 85% 48%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(210, 85%, 48%), hsl(175, 75%, 45%));
+    --gradient-card: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(210, 40%, 98%));
+    --shadow-card: 0 4px 12px -2px hsl(210, 85%, 48%, 0.08);
+    --shadow-hover: 0 8px 24px -4px hsl(210, 85%, 48%, 0.12);
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 175 75% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 175 75% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 210 85% 55%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(210, 85%, 55%), hsl(175, 75%, 50%));
+    --gradient-card: linear-gradient(to bottom, hsl(220, 20%, 12%), hsl(220, 20%, 14%));
+    --shadow-card: 0 4px 12px -2px hsl(0, 0%, 0%, 0.4);
+    --shadow-hover: 0 8px 24px -4px hsl(0, 0%, 0%, 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
